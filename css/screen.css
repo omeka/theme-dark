@@ -1,0 +1,153 @@
+/* == Imports == */
+@import url("reset.css");
+
+/* == Generic styles ======== */
+body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#222;}
+
+	/* -- Headings -- */
+	h1 {font-size:3em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff}
+	h2 {font-size:3em; line-height:1.333333em;color:#999;}
+	h3 {font-size:2em; line-height:1em;color:#999;}
+	h4 {}
+	h5 {}
+	h6 {}
+
+	/* -- Misc Block elements -- */
+	p, ul {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+	li * {font-size:1em;}
+	
+	/* -- Misc Inline elements -- */
+	em {font-style:italic;}
+	strong {font-weight:bold;}
+	label {font-size:1.5em;}
+
+	/* -- Links -- */
+	a:link {color:#999;}
+	a:visited {color:#999;}
+	a:hover {color:#777;}
+	a:active {color:#777;}
+
+	/* -- Misc Classes -- */
+
+		/* Navigation Classes*/
+		.navigation {list-style:none; margin: 2em 0 0;}
+		.navigation li {display:inline;}
+
+		/* Pagination Classes */
+		.item-pagination {float:right;margin:10px 0 10px 0;}
+		.item-pagination li.next {margin-left:20px;}
+		
+		.pagination ul {text-align:right; line-height:1em; padding:0.5em; }
+		.pagination li {display:inline; margin-left:1em; margin-bottom:0; padding:0.5em 0;}
+		
+
+		.pagination .next {border-left:1px solid #ccc; padding-left:1em;}
+		.pagination .previous {border-right:1px solid #ccc; padding-right:1em;}
+		
+		/* Items Classes */
+		.field {border-bottom:1px solid #ccc; margin-top:7px; }
+		.field-value {font-size:1em;color:#ddd;margin:7px 0 7px 0;}
+		.field-value p {margin-bottom:0;}
+		
+		.item-image img {padding:5px; border:2px solid #444; margin-bottom:2em;}
+		
+		.browse .item {overflow:hidden; border-bottom:1px solid #ccc;margin-top:2em;}
+		.browse .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:10px; padding:6px; border:1px solid #ccc;}
+		.browse .item p {margin-top:6px;margin-bottom:6px;}
+		
+		/* Tags Classes */
+		.tags li {display:inline;}
+		ul.tags {margin:0;}
+
+		/* Tag Clouds */
+		.hTagcloud {margin-top:2em;}
+		.hTagcloud ul {list-style:none; margin-left:0; padding-left:0; line-height:1.8em;}
+			.hTagcloud li {display:inline;margin-right:8px;}
+
+			.popular {font-size:100%;}
+			.v-popular {font-size:140%;}
+			.vv-popular {font-size:180%;}
+			.vvv-popular {font-size:220%;}
+			.vvvv-popular {font-size:260%;}
+			.vvvvv-popular {font-size:300%;}
+			.vvvvvv-popular {font-size:320%;}
+			.vvvvvvv-popular {font-size:340%;}
+			.vvvvvvvv-popular {font-size:360%;}
+
+			.popular a, .popular a:visited {color: #bbb;}
+			.v-popular a, .v-popular a:visited {color: #bbb;}
+			.vv-popular a, .vv-popular a:visited {color: #bbb;}
+			.vvv-popular a, .vvv-popular a:visited {color: #bbb;}
+			.vvvv-popular a, .vvvv-popular a:visited {color: #bbb;}
+			.vvvvv-popular a, .vvvvv-popular a:visited {color: #bbb;}
+			.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #bbb;}
+			.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #bbb;}
+			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
+
+
+/* == Wrap == */
+#wrap {background:#333;}
+
+/* == Header == */
+#header {height:100px;width:860px;background:#333;}
+#search {float:right;padding-top:5px;padding-right:5px;}
+#simple-search {float:left;display:inline;}
+#search h2 {font-size:1.5em;display:inline;float:left;padding-right:4px;}
+
+/* == Content == */
+
+	/* -- Structure -- */
+	#content {padding:25px 0 0 0; overflow:hidden;clear:both;background-color:#222;}
+		#primary {float:left; width: 800px; margin-left:60px;}
+		
+	/* General */
+		#featured-item {margin-top:1em;margin-bottom:2em; overflow:hidden;float:left;}
+		#featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;font-style:italic;padding-top:10px;}
+		#featured-item img {padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
+		
+		#recent-items {margin-top:1em;margin-bottom:2em; margin-left:20px; overflow:hidden;}
+		#recent-items h3 {font-size:1em;font-style:italic;margin-bottom:10px;}
+		#recent-items li {border-top:1px solid #999; margin-bottom:10px;}
+		#recent-items img {display:block;clear:both;padding:3px;border:1px solid #444;}
+		#recent-items .item-title {display:block;margin-top:10px;}
+		#recent-items .item-description {display:block;clear:both;}
+		
+		/* -- Navigation -- */
+		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
+		#primary-nav {width:800px;margin-left:60px;}
+		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
+		#primary-nav li { display:block; float:left; }
+		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
+		#primary-nav a:hover {background-color:#ccc;}
+		#primary-nav li.current a {background-color:#fff;}
+
+		#secondary-nav {margin-bottom:1em; border-bottom:1px solid #ccc;margin-bottom:0;padding:0.4em 0.5em; font-size:1.5em; }
+		#secondary-nav li {padding:0.5em 0;}
+		#secondary-nav a {padding:0.5em 1em 0.5em; color:#999;}
+		#secondary-nav a:hover {color:#777;}
+		#secondary-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+
+		/* -- Pagination -- */
+		#pagination-top ul {border-bottom:1px solid #ccc;border-width:0 0 1px 0;}
+		#pagination-bottom ul {margin-bottom:0; }
+		
+/* == Items Pages ==*/
+	#item-files img {padding:5px; border:1px solid #444;}
+	
+	.no-results {margin:10px;}
+	#advanced_search_header {font-size:1.4em;}
+	#primary #basic_search_header {font-size:1.4em;}
+	#primary #submit_search {margin:5px 0 5px 0;}
+
+/* == Exhibits Pages */
+	.exhibit {margin:10px 0 10px 0;}
+	.exhibit-section-nav {margin-bottom:5px;}
+	.exhibit-section-nav li {font-size:1.6em;}
+	#exhibits p {margin:3px 0 3px;}
+		
+/* == Footer == */
+#footer-container {background-color:#222;}
+#footer {clear:both; overflow:hidden; margin-left:60px; border-top:1px solid #ccc;width: 800px;padding-bottom:20px;}
+	#footer p {text-align:right;margin:0;}
+	#footer ul {float:left; width:800px;text-align:right;}
+		#footer ul li {margin-left:12px;}
