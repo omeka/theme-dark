@@ -144,6 +144,12 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 	.exhibit-section-nav {margin-bottom:5px;}
 	.exhibit-section-nav li {font-size:1.6em;}
 	#exhibits p {margin:3px 0 3px;}
+	ul.exhibit-section-nav li {font-size:1.3em;}
+	
+/* == Collections Pages == */
+
+	#collections .field {border:none;}
+	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
 		
 /* == Footer == */
 #footer-container {background-color:#222;}
