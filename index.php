@@ -27,7 +27,7 @@
 			?>
 			<ul>
 				<?php foreach($recent as $item ): ?>
-				<li><a href="<?php echo uri('items/show/'.$item->id); ?>"><?php echo link_to_item($item, 'show', null, array('class'=>'item-title')); ?> </a><?php echo link_to_thumbnail($item); ?> <?php echo h(snippet($item->description, 0, 150)); ?> </li>
+				<li><?php echo link_to_item($item, 'show', null, array('class'=>'item-title')); ?><?php echo link_to_thumbnail($item); ?> <?php echo h(snippet($item->description, 0, 150)); ?> </li>
 				<?php endforeach; ?>
 			</ul>
 			<?php else: ?>
