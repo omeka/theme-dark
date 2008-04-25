@@ -47,6 +47,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 		/* Items Classes */
 		.field {border-bottom:1px solid #ccc; margin-top:7px; }
 		.field-value {font-size:1em;color:#ddd;margin:7px 0 7px 0;}
+		.field-value a {font-size:1.5em;color:#ddd;margin:7px 0 7px 0;}
 		.field-value p {margin-bottom:0;}
 		
 		.item-image img {padding:5px; border:2px solid #444; margin-bottom:2em;}
@@ -141,10 +142,24 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 
 /* == Exhibits Pages */
 	.exhibit {margin:10px 0 10px 0;}
-	.exhibit-section-nav {margin-bottom:5px;}
-	.exhibit-section-nav li {font-size:1.6em;}
 	#exhibits p {margin:3px 0 3px;}
-	ul.exhibit-section-nav li {font-size:1.3em;}
+
+	
+	#exhibit-show {clear:both;}
+
+	.exhibit-section-nav {list-style:none; margin:2em 0 0;}
+	.exhibit-section-nav {margin-bottom:1em; border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
+	.exhibit-section-nav li {padding:0.5em 0;display:inline;}
+	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;}
+	.exhibit-section-nav a:hover {color:#777;}
+	.exhibit-section-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+
+	.exhibit-page-nav {float:right;margin:10px 0 10px 0;}
+	ul.exhibit-page-nav {text-align:right; line-height:1em; padding:0 0.5em;}
+	.exhibit-page-nav li {display:inline; margin-left:1em; margin-bottom:0; padding:0.5em 0;}
+	.exhibit-page-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;}
+	.exhibit-page-nav li.current a {background:#fff;color:#333;}
 	
 	
 /* == Collections Pages == */

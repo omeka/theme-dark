@@ -39,7 +39,7 @@
 				
 			<ul class="navigation">
 	
-			<?php echo nav(array('Browse Items' => uri('items'), 'Browse Exhibits' => uri('exhibits'), 'Browse Collections'=>uri('collections'), 'About' => uri('about'), )); ?>
+			<?php echo nav(array('Browse Items' => uri('items'), 'Browse Exhibits' => uri('exhibits'), 'Browse Collections'=>uri('collections'), 'About' => uri('about'))); ?>
 			</ul>
 			
 			</div><!-- end primary-nav -->

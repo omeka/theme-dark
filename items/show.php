@@ -160,7 +160,7 @@ endif;
 	    <?php if ( has_collection($item) ): ?>
     	    <div id="item-collection" class="field">
             <h3>Collection</h3>
-            <div class="field-value"><?php echo nls2p(h($item->Collection->name)); ?></div>
+            <div class="field-value"><?php echo link_to_collection($item->Collection); ?> </div>
             </div>
     	<?php endif; ?>
 	
@@ -178,11 +178,7 @@ endif;
 	<div id="item-tags" class="field">
 		<h3>Tags</h3>
 		<div class="field-value">
-		<ul class="tags">
-		<?php foreach ($item->Tags as $key=>$tag): ?>
-			<li><a href="<?php echo uri('items/browse/tag/'.urlencode($tag->name)); ?>" rel="tag"><?php echo h($tag->name); ?></a><?php if($tagcount > 1 && $key != $tagcount -1) echo ', '; ?></li>
-		<?php endforeach; ?>
-		</ul>
+		<div class="tags"><?php echo tag_string($item->Tags, uri('items/browse/tag/'), ", "); ?></div> 
 		</div>
 	</div>
 	<?php endif;?>

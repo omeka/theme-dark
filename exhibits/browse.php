@@ -21,20 +21,22 @@
 	
 	<ul class="navigation" id="secondary-nav">
 	    <?php echo nav(array('Browse All' => uri('exhibits'), 'Browse by Tag' => uri('exhibits/tags'))); ?>
-    </ul>
+    </ul>	
 		
 		<?php foreach( $exhibits as $key=>$exhibit ): ?>
 		<div class="exhibit <?php if($key%2==1) echo ' even'; else echo ' odd'; ?>">
 		<h3><?php echo link_to_exhibit($exhibit); ?></h3>
 		<div class="description"><?php echo nls2p($exhibit->description); ?></div>
-		<p class="tags"><?php echo tag_string($exhibit, uri('exhibits/browse/tag/')); ?></p>
+		<p class="tags"><strong>Tags:</strong><?php echo tag_string($exhibit, uri('exhibits/browse/tag/')); ?></p>
 		</div>
 		<?php endforeach; ?>
 
 		<?php else: ?>
 		<p>You have no exhibits. Please add some in the admin.</p>
 		<?php endif; ?>
+		
 
+		
 </div><!-- end primary -->
 
 <?php foot(); ?>

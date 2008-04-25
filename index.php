@@ -9,9 +9,11 @@
 			<?php if(!empty($randomitem)):?>
 			
 			<?php if(has_thumbnail($randomitem)): ?>
-			<a class="image" href="<?php echo uri('items/show/'.$randomitem->id); ?>"><?php echo fullsize($randomitem); ?></a>
+			
+				<?php echo link_to_fullsize($randomitem, array('class'=>'image')); ?>
+			
 			<?php endif; ?>
-			<h3><a href="<?php echo uri('items/show/'.$randomitem->id); ?>"><?php echo $randomitem->title; ?></a></h3>	
+			<h3><?php echo link_to_item($randomitem); ?> </h3>	
 			<?php else: ?>
 				<h3>No Featured Items</h3>
 				<p>You have no featured items. Please make some featured.</p>	
@@ -25,8 +27,7 @@
 			?>
 			<ul>
 				<?php foreach($recent as $item ): ?>
-				<li><a href="<?php echo uri('items/show/'.$item->id); ?>"><?php echo "<span class=\"item-title\">".$item->title."</span>"; ?></a><?php if ($item ->has_thumbnail); {echo link_to_thumbnail($item); } ?><?php if ($item->description); 
-				{ echo "<span class=\"item-description\">".snippet($item->description, 0, 150)."</span>"; } ?></li>
+				<li><a href="<?php echo uri('items/show/'.$item->id); ?>"><?php echo link_to_item($item, 'show', null, array('class'=>'item-title')); ?> </a><?php echo link_to_thumbnail($item); ?> <?php echo h(snippet($item->description, 0, 150)); ?> </li>
 				<?php endforeach; ?>
 			</ul>
 			<?php else: ?>
