@@ -13,6 +13,10 @@
 <!-- Stylesheets -->
 <link rel="stylesheet" media="screen" href="<?php echo css('screen'); ?>" />
 <link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+<!-- Only IE6 and below see the following link -->
+<!--[if IE ]>
+	<link rel="stylesheet" media="screen" href="<?php echo css('ie'); ?>" />
+<![endif]-->
 
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
@@ -22,8 +26,8 @@
 
 </head>
 <body<?php echo $bodyid ? ' id="'.$bodyid.'"' : ''; ?><?php echo $bodyclass ? ' class="'.$bodyclass.'"' : ''; ?>>
-	<div id="wrap">
-		
+	
+	<div id="header-container">	
 		<div id="header">
 			<div id="search">
 			    <h2>Search</h2>
@@ -31,8 +35,8 @@
 			</div><!-- end search -->
 			
 			<h1><a href="<?php echo uri(''); ?>"><?php echo settings('site_title'); ?></a></h1>
-			</div><!-- end header -->
-			
+		</div><!-- end header -->
+	</div><!--end header-container-->
 
 			<div id="nav-container">
 			<div id="primary-nav">
@@ -47,5 +51,4 @@
 			
 			
 		<div id="content">
-			
 			

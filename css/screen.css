@@ -85,13 +85,10 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 			.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #bbb;}
 			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
 
-
-/* == Wrap == */
-#wrap {background:#333;}
-
 /* == Header == */
-#header {height:100px;width:860px;background:#333;}
-#search {float:right;padding-top:5px;padding-right:5px;}
+#header-container {background:#333;}
+#header {height:100px;width:860px;}
+#search {float:right;padding-top:5px;margin:0;}
 #simple-search {float:left;display:inline;}
 #search h2 {font-size:1.5em;display:inline;float:left;padding-right:4px;}
 
@@ -99,7 +96,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 
 	/* -- Structure -- */
 	#content {padding:25px 0 0 0; overflow:hidden;clear:both;background-color:#222;}
-		#primary {float:left; width: 800px; margin-left:60px;}
+		#primary {float:left; width: 820px; margin-left:40px;}
 		
 	/* General */
 		#featured-item {margin-top:1em;margin-bottom:2em; overflow:hidden;float:left;}
@@ -115,12 +112,13 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 		
 		/* -- Navigation -- */
 		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-		#primary-nav {width:800px;margin-left:60px;}
+		#primary-nav {width:860px;}
 		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
 		#primary-nav li { display:block; float:left; }
 		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
 		#primary-nav a:hover {background-color:#ccc;}
 		#primary-nav li.current a {background-color:#fff;}
+		#primary-nav li.nav-about a {padding-right:0;}
 
 		#secondary-nav {margin-bottom:1em; border-bottom:1px solid #ccc;margin-bottom:0;padding:0.4em 0.5em; font-size:1.5em; }
 		#secondary-nav li {padding:0.5em 0;}
@@ -148,18 +146,20 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 	#exhibit-show {clear:both;}
 
 	.exhibit-section-nav {list-style:none; margin:2em 0 0;}
-	.exhibit-section-nav {margin-bottom:1em; border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
-	.exhibit-section-nav li {padding:0.5em 0;display:inline;}
-	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;}
+	.exhibit-section-nav {border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
+	.exhibit-section-nav li {display:inline;zoom:1;}
+	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;zoom:1;}
 	.exhibit-section-nav a:hover {color:#777;}
 	.exhibit-section-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
 	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
 
-	.exhibit-page-nav {float:right;margin:10px 0 10px 0;}
-	ul.exhibit-page-nav {text-align:right; line-height:1em; padding:0 0.5em;}
-	.exhibit-page-nav li {display:inline; margin-left:1em; margin-bottom:0; padding:0.5em 0;}
-	.exhibit-page-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;}
+	.exhibit-page-nav {clear:both;float:right;margin-top:0.4em;}
+	ul.exhibit-page-nav {text-align:right; padding:0 0.5em;}
+	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
+	.exhibit-page-nav a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;}
 	.exhibit-page-nav li.current a {background:#fff;color:#333;}
+	
+	#exhibit-summary {margin-top:2em;}
 	
 	
 /* == Collections Pages == */
@@ -168,8 +168,8 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#2
 	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
 		
 /* == Footer == */
-#footer-container {background-color:#222;}
-#footer {clear:both; overflow:hidden; margin-left:60px; border-top:1px solid #ccc;width: 800px;padding-bottom:20px;}
+#footer-container {background-color:#222;height:200px;}
+#footer {background-color:#222;clear:both; overflow:hidden; margin-left:40px; border-top:1px solid #ccc;width: 820px;padding-bottom:20px;}
 	#footer p {text-align:right;margin:0;}
-	#footer ul {float:left; width:800px;text-align:right;}
+	#footer ul {float:left; width:820px;text-align:right;}
 		#footer ul li {margin-left:12px;}
