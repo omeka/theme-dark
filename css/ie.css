@@ -1,0 +1,17 @@
+#search {width:300px;margin-right:-20px;}
+
+#primary {margin-left:20px;}
+
+#featured-item {float:left;}
+
+#recent-items {float:right;}
+
+.browse .item {overflow:hidden; border-bottom:1px solid #ccc;margin-top:2em;zoom:1;padding-bottom:2em;}
+
+.hTagcloud ul {line-height:2.2em;}
+
+.exhibit-page-nav a {padding:0.5em 1em 0.5em 1em;}
+
+ul.exhibit-page-nav {margin:0;}
+
+ul.exhibit-section-nav {padding-bottom:0;}
