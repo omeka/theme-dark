@@ -13,6 +13,7 @@
 <!-- Stylesheets -->
 <link rel="stylesheet" media="screen" href="<?php echo css('screen'); ?>" />
 <link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+
 <!-- Only IE6 and below see the following link -->
 <!--[if IE ]>
 	<link rel="stylesheet" media="screen" href="<?php echo css('ie'); ?>" />
@@ -29,12 +30,12 @@
 	
 	<div id="header-container">	
 		<div id="header">
-			<div id="search">
-			    <h2>Search</h2>
-			    <?php echo simple_search(array('id'=>'simple-search'),uri('items/browse')); ?>
+			<div id="search-container">
+				<?php echo simple_search(); ?>
+				<?php echo link_to_advanced_search(); ?>
 			</div><!-- end search -->
 			
-			<h1><a href="<?php echo uri(''); ?>"><?php echo settings('site_title'); ?></a></h1>
+			<div id="site-title"><?php echo link_to_home_page(); ?></div>
 		</div><!-- end header -->
 	</div><!--end header-container-->
 
@@ -43,7 +44,7 @@
 				
 			<ul class="navigation">
 	
-			<?php echo nav(array('Browse Items' => uri('items'), 'Browse Exhibits' => uri('exhibits'), 'Browse Collections'=>uri('collections'), 'About' => uri('about'))); ?>
+			<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
 			</ul>
 			
 			</div><!-- end primary-nav -->

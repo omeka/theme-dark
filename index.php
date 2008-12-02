@@ -4,16 +4,16 @@
 		<!-- Featured Item -->
 		<div id="featured-item">
 			<h2>Featured Item</h2>
-			<?php $randomitem = random_featured_item();  ?>
+			<?php if($randomitem = random_featured_item(true)):  ?>
+			    
+			    <?php set_current_item($randomitem); ?>
 			
-			<?php if(!empty($randomitem)):?>
+			<?php if (item_has_thumbnail()): ?>
 			
-			<?php if(has_thumbnail($randomitem)): ?>
-			
-				<?php echo link_to_fullsize($randomitem, array('class'=>'image')); ?>
+				<?php echo link_to_item(item_fullsize()); ?>
 			
 			<?php endif; ?>
-			<h3><?php echo link_to_item($randomitem); ?> </h3>	
+			<h3><?php echo link_to_item(); ?> </h3>	
 			<?php else: ?>
 				<h3>No Featured Items</h3>
 				<p>You have no featured items. Please make some featured.</p>	
@@ -22,19 +22,43 @@
 		
 		<div id="recent-items">
 		<h2>Recently Added</h2>
-			<?php $recent = recent_items(3); 
-			if(!empty($recent)):
-			?>
-			<ul>
-				<?php foreach($recent as $item ): ?>
-				<li><?php echo link_to_item($item, 'show', null, array('class'=>'item-title')); ?><?php echo link_to_thumbnail($item); ?> <?php echo h(snippet($item->description, 0, 150)); ?> </li>
-				<?php endforeach; ?>
-			</ul>
-			<?php else: ?>
-					<h3>No Recent Items</h3>
-					<p>No recent items available.</p>	
-				<?php endif; ?>
-		</div><!--end recent-items -->	
+    		<?php set_items_for_loop(recent_items(4)); ?>
+    		<?php if (has_items_for_loop()): ?>
+
+    		<div class="items-list">
+    			<?php while (loop_items()): ?>
+
+    			<div class="item">
+    			    
+    			    <?php if(item_has_thumbnail()): ?>
+        				<div class="item-img">
+        				<?php echo link_to_item(item_square_thumbnail()); ?>						
+        				</div>
+    				
+    				<?php else: ?>
+
+    				<h3><?php echo link_to_item(); ?></h3>
+
+    				<?php if($desc = item('Dublin Core', 'Description', array('snippet'=>5))): ?>
+
+    				    <div class="item-description"><?php echo $desc; ?><p><?php echo link_to_item('see more',(array('class'=>'show'))) ?></p></div>
+
+    				<?php endif; ?>	
+    				
+    				<?php endif; ?>
+
+    			</div>
+    			<?php endwhile; ?>	
+    		</div>
+
+    		<?php else: ?>
+    			<p>No recent items available.</p>
+
+    		<?php endif; ?>
+
+    		<p class="view-items-link"><a href="<?php echo uri('items'); ?>">View All Items</a></p>
+
+    	</div><!--end recent-items -->
 
 	</div><!--primary-->
 	
