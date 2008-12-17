@@ -6,8 +6,10 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 
 	/* -- Headings -- */
 	h1 {font-size:3em; line-height:1.333333em;color:#999;}
-	h2 {font-size:2em; line-height:1.333333em;color:#999;}
-	h3 {font-size:2em; line-height:1em;color:#999;}
+	h2 {font-size:2.2em; line-height:1.333333em;color:#999;}
+	    h2 a {text-decoration:none;font-style:italic;}
+	h3 {font-size:1.9em; line-height:1em;color:#999;}
+	    h3 a {text-decoration:none;font-style:italic;}
 	h4 {}
 	h5 {}
 	h6 {}
@@ -15,8 +17,9 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 	#home h2 {font-size:3em; line-height:1.333333em;color:#999;}
 
 	/* -- Misc Block elements -- */
-	p, ul {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
-	li * {font-size:1em;}
+	p, ul, ol {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+	ol {list-style:decimal inside;}
+	li {font-size:1em;}
 	
 	/* -- Misc Inline elements -- */
 	em {font-style:italic;}
@@ -50,15 +53,17 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 		.element {border-bottom:1px solid #ccc; margin-top:7px; }
 		.element-text {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
 		.element-text-empty {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
-		.element-text a {font-size:1.5em;color:#ddd;margin:7px 0 7px 0;}
+		.element-text a {color:#ddd;margin:7px 0 7px 0;}
 		.element-text p {margin-bottom:0;font-size:1em;}
+		.element-text ul {margin-bottom:0;font-size:1em;}
 		
 		.item-image img {padding:5px; border:2px solid #444; margin-bottom:2em;}
 		
-		.browse .item {overflow:hidden;padding-top:2em;border-top:.1em solid #ccc;}
-		.browse .item h2 a {text-decoration:none;}
-		.browse .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
-		.browse .item p {margin-top:6px;margin-bottom:6px;}
+		.item-meta {overflow:hidden;}
+		
+		.browse .item, #collections .show .item{overflow:hidden;padding-top:2em;border-top:.1em solid #ccc;}
+		.browse .item-img img, #collections .show .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
+		.browse .item p, #collections .show .item p {margin-top:6px;margin-bottom:6px;}
 		
 		/* Tags Classes */
 		.tags li {display:inline;}
@@ -128,7 +133,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 		
 /* == Home Page == */
     #featured-item {margin-top:1em;margin-bottom:2em; overflow:hidden;float:left;}
-    #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;font-style:italic;padding-top:10px;}
+    #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;padding-top:10px;}
     #featured-item img {padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
     
     .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
@@ -136,13 +141,12 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 
     #recent-items {width: 840px;margin-top:1.5em;margin-bottom:2em; overflow:hidden;clear:both;margin-right:-20px;}
     #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
-    #recent-items h3 a {text-decoration: none;}
     #recent-items .item {display:block;float:left;width:208px;height:208px;overflow:hidden;margin-right:2px;}
     #recent-items img {display:block;padding:3px;border:1px solid #444;}
     #recent-items .item-title {display:block;margin-top:10px;}
     #recent-items .item-description {padding:0 3px;}
-    #recent-items .item-description a.show {clear:both;float:right;margin-top:5px;}
-    #recent-items .view-items-link {clear:both;float:right;margin-top:10px;}
+    #recent-items .item-description a.show {margin-left:5px;}
+    #recent-items .view-items-link, #collections .show .view-items-link {clear:both;float:right;margin-top:10px;}
 		
 /* == Items Pages ==*/
 	#item-files img {padding:5px; border:1px solid #444;}
@@ -166,12 +170,11 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
     .radioinputs label {display:block; float:left; width: 48%; clear:none;}
     input#description {width: 378px; height: 312px;}
     .search-entry select {margin-bottom:.5em;}
-    #primary #submit_search {margin:.5em 0;float:right;}
+    #primary #submit_search {margin:.5em 0 1em 455px;}
 	
 	.no-results {margin:10px;}
 	#advanced_search_header {font-size:1.4em;}
 	#primary #basic_search_header {font-size:1.4em;}
-	#primary #submit_search {margin:5px 0 5px 0;}
 
 /* == Exhibits Pages */
 	.exhibit {margin:10px 0 10px 0;}
@@ -200,6 +203,8 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 
 	#collections .field {border:none;}
 	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
+	
+	#collections .show h3 {line-height:1.333em;}
 		
 /* == Footer == */
 #footer-container {height:200px; border-top:2px solid #ccc;}

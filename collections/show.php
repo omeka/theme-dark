@@ -16,11 +16,13 @@
             </ul>
         </div>
     </div><!-- end collectors -->
-
-    <p class="view-items-link"><?php echo link_to_browse_items('View the items in' . collection('Name'), array('collection' => collection('id'))); ?></p>
     
     <div id="collection-items">
+			    
         <?php while (loop_items_in_collection(5)): ?>
+            
+            <div class="item hentry">
+    			<div class="item-meta">
             
     		<h3><?php echo link_to_item(item('Dublin Core', 'Title'), array('class'=>'permalink')); ?></h3>
 
@@ -39,8 +41,13 @@
     			<?php echo $description; ?>
     			</div>
 		    <?php endif; ?>
+		    
+		    	</div><!-- end class="item-meta" -->
+			</div><!-- end class="item hentry" -->
 		
     <?php endwhile; ?>
+    
+        <p class="view-items-link"><?php echo link_to_browse_items('View the items in ' . collection('Name'), array('collection' => collection('id'))); ?></p>
     </div><!-- end collection-items -->
     
     <?php echo plugin_append_to_collections_show(); ?>

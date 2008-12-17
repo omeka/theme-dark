@@ -39,9 +39,9 @@
 
     				<h3><?php echo link_to_item(); ?></h3>
 
-    				<?php if($desc = item('Dublin Core', 'Description', array('snippet'=>5))): ?>
+    				<?php if($desc = item('Dublin Core', 'Description', array('snippet'=>200))): ?>
 
-    				    <div class="item-description"><?php echo $desc; ?><p><?php echo link_to_item('see more',(array('class'=>'show'))) ?></p></div>
+    				    <div class="item-description"><?php echo $desc; ?><?php echo link_to_item('see more',(array('class'=>'show'))) ?></div>
 
     				<?php endif; ?>	
     				
