@@ -11,12 +11,12 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo css('screen'); ?>" />
-<link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('screen')); ?>" />
+<link rel="stylesheet" media="print" href="<?php echo html_escape(css('print')); ?>" />
 
 <!-- Only IE6 and below see the following link -->
 <!--[if IE ]>
-	<link rel="stylesheet" media="screen" href="<?php echo css('ie'); ?>" />
+	<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('ie')); ?>" />
 <![endif]-->
 
 <!-- JavaScripts -->

@@ -13,7 +13,6 @@
 	</div><!-- end footer -->
 	</div><!-- end footer-container -->
 
-</div><!--end wrap-->
 
 <?php echo plugin_footer(); ?> 
 

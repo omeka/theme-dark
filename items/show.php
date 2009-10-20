@@ -1,4 +1,4 @@
-<?php head(array('title' => h($item->title),'bodyid'=>'items','bodyclass' => 'show item')); ?>
+<?php head(array('title' => html_escape($item->title),'bodyid'=>'items','bodyclass' => 'show item')); ?>
 
 <div id="primary">
 
@@ -6,7 +6,6 @@
 	
 	<?php if (item_has_thumbnail()): ?>
 	    
-
 	<div class="item-image">
 	
 	<?php echo display_files_for_item(array('imageSize'=>'fullsize')); ?>
