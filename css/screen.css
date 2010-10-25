@@ -154,7 +154,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 	
 	
 	/* Advanced Search */
-    legend {display:none;}
+    #advanced-search-page legend {display:none;}
     fieldset {display:block; clear:both;}
     label {font-size:1.5em;}
     .label {font-size:1.5em;}
