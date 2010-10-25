@@ -19,6 +19,13 @@
 	<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('ie')); ?>" />
 <![endif]-->
 
+<style type="text/css" media="screen">
+    <?php if($headerBackground = get_theme_option('Header Background')): ?>
+    #header {
+        background:transparent url('<?php echo WEB_THEME_UPLOADS.DIRECTORY_SEPARATOR.$headerBackground; ?>') top left no-repeat;
+    }
+    <?php endif; ?>
+</style>
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
 
@@ -35,17 +42,17 @@
 				<?php echo link_to_advanced_search(); ?>
 			</div><!-- end search -->
 			
-			<div id="site-title"><?php echo link_to_home_page(); ?></div>
+		<div id="site-title"><?php echo link_to_home_page(dark_display_logo()); ?></div>
 		</div><!-- end header -->
 	</div><!--end header-container-->
 
 			<div id="nav-container">
 			<div id="primary-nav">
 				
-			<ul class="navigation">
+    			<ul class="navigation">
 	
-			<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
-			</ul>
+    			<?php echo dark_public_nav_header(); ?>
+    			</ul>
 			
 			</div><!-- end primary-nav -->
 			</div><!-- end div-container -->
