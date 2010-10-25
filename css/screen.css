@@ -95,7 +95,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
 
 /* == Header == */
-#header {padding: 2em 0;}
+#header {height:12em;width:860px;}
 #search-container {float:right;padding-top:10px;margin:0;}
 #search-container #search {margin-right:5px;}
 #search-container #submit_search {background:#888;}
@@ -106,9 +106,8 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 #site-title {font-size:3.5em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff}
 #site-title a {text-decoration:none;}
 
-
-
 /* == Content == */
+
 	/* -- Structure -- */
 	#content {padding:25px 0 0 20px; overflow:hidden;clear:both;background-color:#222;}
 		#primary {float:left; width: 840px; }
@@ -133,46 +132,45 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 		#pagination-bottom ul {margin-bottom:0;border-top:2px solid #ccc;}
 		
 /* == Home Page == */
-    #featured-item {margin-top:1em;margin-bottom:2em; overflow:hidden;float:left;}
+    #featured-item {width: 500px; margin-top:1em;margin-bottom:2em; float:left;}
     #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;padding-top:10px;}
-    #featured-item img {padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
+    #featured-item img {width: 466px; padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
     
     .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
     .item-description p {font-size:1em;}
 
-    #recent-items {width: 840px;margin-top:1.5em;margin-bottom:2em; overflow:hidden;clear:both;margin-right:-20px;}
+    #recent-items {margin-top:3em;margin-bottom:2em; overflow:hidden;margin-right:-10px;}
     #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
-    #recent-items .item {display:block;float:left;width:208px;height:208px;overflow:hidden;margin-right:2px;}
+    #recent-items .item {display:block;float:left;width:208px;height:auto;overflow:hidden;margin-right:2px;}
     #recent-items img {display:block;padding:3px;border:1px solid #444;}
     #recent-items .item-title {display:block;margin-top:10px;}
     #recent-items .item-description {padding:0 3px;}
     #recent-items .item-description a.show {margin-left:5px;}
-    #recent-items .view-items-link, #collections .show .view-items-link {clear:both;float:right;margin-top:10px;}
+    #recent-items .view-items-link, #collections .show .view-items-link {clear:both;float:right;margin:10px;}
 		
 /* == Items Pages ==*/
 	#item-files img {padding:5px; border:1px solid #444;}
 	
 	
 	/* Advanced Search */
-    #advanced-search-page legend {display:none;}
+    textarea {width:378px; height:312px;float:right;}
+    legend {display:none;}
     fieldset {display:block; clear:both;}
     label {font-size:1.5em;}
     .label {font-size:1.5em;}
     .inputs {overflow:hidden;zoom:1;}
-    .field {padding:0.75em 0; overflow:hidden; width:525px;}
-    .field label {float:left; width:25%;font-weight:normal;clear:left; }
-    .field .label {float:left; width:25%;font-weight:normal;clear:left; }
-    .field .textinput, .field select {float:right; width:70%;background:#fff;}
-    .field select {width: 70%;}
-	#advanced-search-page .field input {float:right;}
-	#advanced-search-page .field button {float:right;}    
-	input.submitinput {margin-top:1em;}
+    .field {border-bottom:1px solid #ccc; padding:0.75em 0; overflow:hidden; width:512px;}
+    .field label {float:left; width: 114px;font-weight:normal;clear:left; }
+    .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+    .field .textinput, .field select {float:right; width: 378px;background:#fff;}
+    .field select {width: 382px;}
+    .field input {margin:0;margin-left:16px;}
+    input.submitinput {margin-top:1em;}
     .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
     .radioinputs label {display:block; float:left; width: 48%; clear:none;}
     input#description {width: 378px; height: 312px;}
     .search-entry select {margin-bottom:.5em;}
     #submit_search_advanced {margin:.5em 0 1em 455px;}
-	#advanced-search-page .field {border-bottom:1px solid #ccc; }
 	
 	.no-results {margin:10px;}
 	#advanced_search_header {font-size:1.4em;}
@@ -184,7 +182,7 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 	
 	#exhibit-show {clear:both;}
 
-	.exhibit-section-nav {list-style:none; margin:2em 0 0;}
+	.exhibit-section-nav {list-style:none; margin:2em 0 0; color:#fff;}
 	.exhibit-section-nav {border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
 	.exhibit-section-nav li {display:inline;zoom:1;}
 	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;zoom:1;}
@@ -197,7 +195,9 @@ body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#3
 	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
 	.exhibit-page-nav a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;}
 	.exhibit-page-nav li.current a {background:#fff;color:#333;}
-	
+	.exhibit-text {clear:both;}
+	.exhibit-item .exhibit-title{clear: both;}
+	.exhibit-item {float: left;}
 	#exhibit-summary {margin-top:2em;}
 	
 	

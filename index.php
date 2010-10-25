@@ -22,8 +22,10 @@
 								<h3>No Featured Items</h3>
 								<p>You have no featured items. Please make some featured.</p>	
 							<?php endif; ?>	
-						</div><!--end featured-item-->
+						<!--end featured-item-->
 						<?php endif; ?>	
+						</div>
+					
 					<div id="recent-items">
 					    		<h2>Recently Added Items</h2>
 
@@ -63,9 +65,9 @@
 
 					    		<p class="view-items-link"><a href="<?php echo html_escape(uri('items')); ?>">View All Items</a></p>
 	        <?php if (get_theme_option('Display Featured Collection') == 1): ?>
-							</div><!--end recent-items -->
+						</div><!--end recent-items -->
 		    <?php echo display_random_featured_collection(); ?>
-							    	</div><!-- end featured collection -->
+							    
 									<?php endif; ?>	
 
 			<?php if ((get_theme_option('Display Featured Exhibit') == 1) && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
