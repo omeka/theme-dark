@@ -5,8 +5,9 @@
 		<h1>Browse Items (<?php echo total_results(); ?> total)</h1>
 		
 		<ul class="items-nav navigation" id="secondary-nav">
-			<?php echo nav(array('Browse All' => uri('items'), 'Browse by Tag' => uri('items/tags'))); ?>
-		</ul>
+		            <?php echo dark_nav_items(); ?>
+				</ul>
+		
 		
 		<div id="pagination-top" class="pagination"><?php echo pagination_links(); ?></div>
 			
