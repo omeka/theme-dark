@@ -2,7 +2,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title><?php echo settings('site_title'); echo $title ? ' | ' . $title : ''; ?></title>
+<title><?php echo settings('site_title'); echo isset($title) ? ' | ' . $title : ''; ?></title>
 
 <!-- Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,30 +10,29 @@
 
 <?php echo auto_discovery_link_tag(); ?>
 
-<!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('screen')); ?>" />
-<link rel="stylesheet" media="print" href="<?php echo html_escape(css('print')); ?>" />
+<!-- Plugin Stuff -->
+<?php plugin_header(); ?>
 
-<!-- Only IE6 and below see the following link -->
-<!--[if IE ]>
-	<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('ie')); ?>" />
-<![endif]-->
+<!-- Stylesheets -->
+<?php
+queue_css('style');
+display_css(); 
+?>
+
+<?php if($headerBackground = get_theme_option('Header Background')): ?>
 
 <style type="text/css" media="screen">
-    <?php if($headerBackground = get_theme_option('Header Background')): ?>
     #header {
         background:transparent url('<?php echo WEB_THEME_UPLOADS.DIRECTORY_SEPARATOR.$headerBackground; ?>') top left no-repeat;
     }
-    <?php endif; ?>
 </style>
-<!-- JavaScripts -->
-<?php echo js('default'); ?>
+<?php endif; ?>
 
-<!-- Plugin Stuff -->
-<?php echo plugin_header(); ?>
+<!-- JavaScripts -->
+<?php echo display_js(); ?>
 
 </head>
-<body<?php echo $bodyid ? ' id="'.$bodyid.'"' : ''; ?><?php echo $bodyclass ? ' class="'.$bodyclass.'"' : ''; ?>>
+<body<?php echo isset($bodyid) ? ' id="'.$bodyid.'"' : ''; ?><?php echo isset($bodyclass) ? ' class="'.$bodyclass.'"' : ''; ?>>
 	
 	<div id="header-container">	
 		<div id="header">
@@ -42,7 +41,7 @@
 				<?php echo link_to_advanced_search(); ?>
 			</div><!-- end search -->
 			
-		<div id="site-title"><?php echo link_to_home_page(dark_display_logo()); ?></div>
+		<div id="site-title"><?php echo link_to_home_page(custom_display_logo()); ?></div>
 		</div><!-- end header -->
 	</div><!--end header-container-->
 
@@ -51,7 +50,7 @@
 				
     			<ul class="navigation">
 	
-    			<?php echo dark_public_nav_header(); ?>
+    			<?php echo custom_public_nav_header(); ?>
     			</ul>
 			
 			</div><!-- end primary-nav -->

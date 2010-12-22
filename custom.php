@@ -4,9 +4,9 @@
 // designed for portability across themes should be grouped into a plugin whenever
 // possible. Ideally, you should namespace these with your theme name.
 
-add_filter(array('Display', 'Item', 'Dublin Core', 'Title'), 'dark_show_untitled_items');
+add_filter(array('Display', 'Item', 'Dublin Core', 'Title'), 'custom_show_untitled_items');
 
-function dark_show_untitled_items($title)
+function custom_show_untitled_items($title)
 {
     // Remove all whitespace and formatting before checking to see if the title 
     // is empty.
@@ -22,7 +22,7 @@ function dark_show_untitled_items($title)
  * image tag with the logo as the src, or returns null.
  *
  **/
-function dark_display_logo()
+function custom_display_logo()
 {
     if(function_exists('get_theme_option')) {
         
@@ -38,7 +38,7 @@ function dark_display_logo()
     return null;
 }
 
-function dark_show_item_metadata(array $options = array(), $item = null)
+function custom_show_item_metadata(array $options = array(), $item = null)
 {
     if (!$item) {
         $item = get_current_item();
@@ -62,7 +62,7 @@ function dark_show_item_metadata(array $options = array(), $item = null)
     }
 }
 
-function dark_public_nav_header()
+function custom_public_nav_header()
 {    
     if ($customHeaderNavigation = get_theme_option('custom_header_navigation')) {
         $navArray = array();
@@ -88,7 +88,7 @@ function dark_public_nav_header()
     }
 }
 
-function dark_header_image()
+function custom_header_image()
 {
     if(function_exists('get_theme_option') && $headerBg = get_theme_option('Header Image')) {
         $headerBg = WEB_THEME_UPLOADS.DIRECTORY_SEPARATOR.$headerBg;
@@ -98,7 +98,7 @@ function dark_header_image()
     return false;
 }
 
-function dark_nav_items($navArray = array())
+function custom_nav_items($navArray = array())
 {
     if (!$navArray) {
         $navArray = array('Browse All' => uri('items'), 'Browse by Tag' => uri('items/tags'));

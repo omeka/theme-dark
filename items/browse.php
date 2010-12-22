@@ -5,7 +5,7 @@
 		<h1>Browse Items (<?php echo total_results(); ?> total)</h1>
 		
 		<ul class="items-nav navigation" id="secondary-nav">
-		            <?php echo dark_nav_items(); ?>
+		            <?php echo custom_nav_items(); ?>
 				</ul>
 		
 		

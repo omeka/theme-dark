@@ -1,0 +1,309 @@
+@media screen {
+    /* == Imports == */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	outline: 0;
+    	font-weight: inherit;
+    	font-style: inherit;
+    	font-family: inherit;
+    	vertical-align: baseline;
+    }
+    /* remember to define focus styles! */
+    :focus, :active {
+    	outline: 0;
+    }
+    body {
+    	line-height: 1;
+    	color: black;
+    	background: white;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    /* tables still need 'cellspacing="0"' in the markup */
+    table {
+    	border-collapse: separate;
+    	border-spacing: 0;
+    }
+    caption, th, td {
+    	text-align: left;
+    	font-weight: normal;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: "";
+    }
+    blockquote, q {
+    	quotes: "" "";
+    }
+    /* == Generic styles ======== */
+    body {font:62.5% "Times New Roman", Times, serif; color:#777;background-color:#333;}
+
+    	/* -- Headings -- */
+    	h1 {font-size:3em; line-height:1.333333em;color:#999;}
+    	h2 {font-size:2.2em; line-height:1.333333em;color:#999;}
+    	    h2 a {text-decoration:none;font-style:italic;}
+    	h3 {font-size:1.9em; line-height:1em;color:#999;}
+    	    h3 a {text-decoration:none;font-style:italic;}
+    	h4 {}
+    	h5 {}
+    	h6 {}
+	
+    	#home h2 {font-size:3em; line-height:1.333333em;color:#999;}
+
+    	/* -- Misc Block elements -- */
+    	p, ul, ol {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+    	ol {list-style:decimal inside;}
+    	li {font-size:1em;}
+	
+    	/* -- Misc Inline elements -- */
+    	em {font-style:italic;}
+    	strong {font-weight:bold;}
+    	label {font-size:1.5em;}
+
+    	/* -- Links -- */
+    	a:link {color:#999;}
+    	a:visited {color:#999;}
+    	a:hover {color:#777;}
+    	a:active {color:#777;}
+
+    	/* -- Misc Classes -- */
+
+    		/* Navigation Classes*/
+    		.navigation {list-style:none; margin: 2em 0 0;}
+    		.navigation li {display:inline;}
+
+    		/* Pagination Classes */
+    		.item-pagination {float:right;margin:10px 0 10px 0;}
+    		.item-pagination li.next {margin-left:20px;}
+		
+    		.pagination ul {text-align:right; line-height:1em; padding:0.5em; }
+    		.pagination li {display:inline; margin-left:1em; margin-bottom:0; padding:0.5em 0;}
+		
+
+    		.pagination .next {border-left:1px solid #ccc; padding-left:1em;}
+    		.pagination .previous {border-right:1px solid #ccc; padding-right:1em;}
+		
+    		/* Items Classes */
+    		.element {border-bottom:1px solid #ccc; margin-top:7px; }
+    		.element-text {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
+    		.element-text-empty {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
+    		.element-text a {color:#ddd;margin:7px 0 7px 0;}
+    		.element-text p {margin-bottom:0;font-size:1em;}
+    		.element-text ul {margin-bottom:0;font-size:1em;}
+		
+    		.item-image img {padding:5px; border:2px solid #444; margin-bottom:2em;}
+		
+    		.item-meta {overflow:hidden;}
+		
+    		.browse .item, #collections .show .item{overflow:hidden;padding-top:2em;border-top:.1em solid #ccc;}
+    		.browse .item-img img, #collections .show .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
+    		.browse .item p, #collections .show .item p {margin-top:6px;margin-bottom:6px;}
+		
+    		/* Tags Classes */
+    		.tags li {display:inline;}
+    		ul.tags {margin:0;}
+
+    		/* Tag Clouds */
+    		.hTagcloud {margin-top:2em;}
+    		.hTagcloud ul {list-style:none; margin-left:0; padding-left:0; line-height:1.8em;}
+    			.hTagcloud li {display:inline;margin-right:8px;}
+
+    			.popular {font-size:100%;}
+    			.v-popular {font-size:140%;}
+    			.vv-popular {font-size:180%;}
+    			.vvv-popular {font-size:220%;}
+    			.vvvv-popular {font-size:260%;}
+    			.vvvvv-popular {font-size:300%;}
+    			.vvvvvv-popular {font-size:320%;}
+    			.vvvvvvv-popular {font-size:340%;}
+    			.vvvvvvvv-popular {font-size:360%;}
+
+    			.popular a, .popular a:visited {color: #bbb;}
+    			.v-popular a, .v-popular a:visited {color: #bbb;}
+    			.vv-popular a, .vv-popular a:visited {color: #bbb;}
+    			.vvv-popular a, .vvv-popular a:visited {color: #bbb;}
+    			.vvvv-popular a, .vvvv-popular a:visited {color: #bbb;}
+    			.vvvvv-popular a, .vvvvv-popular a:visited {color: #bbb;}
+    			.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #bbb;}
+    			.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #bbb;}
+    			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
+
+    /* == Header == */
+    #header {height:12em;width:860px;}
+    #search-container {float:right;padding-top:10px;margin:0;}
+    #search-container #search {margin-right:5px;}
+    #search-container #submit_search {background:#888;}
+    #search-container #submit_search:hover {background:#777;}
+    #search-container a {float:right;font-size:1.5em;margin-top:5px;text-decoration:none;color:#888;padding:1px 5px;}
+    #search-container a:hover {color:#777;}
+
+    #site-title {font-size:3.5em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff}
+    #site-title a {text-decoration:none;}
+
+    /* == Content == */
+
+    	/* -- Structure -- */
+    	#content {padding:25px 0 0 20px; overflow:hidden;clear:both;background-color:#222;}
+    		#primary {float:left; width: 840px; }
+		
+    		/* -- Navigation -- */
+    		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
+    		#primary-nav {width:860px;}
+    		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
+    		#primary-nav li { display:block; float:left; }
+    		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
+    		#primary-nav a:hover {background-color:#ccc;}
+    		#primary-nav li.current a {background-color:#fff;}
+    		#primary-nav li.nav-about a {padding-right:0;}
+
+    		#secondary-nav {margin-bottom:0;padding:0.4em 0;border-bottom:2px solid #ccc;}
+    		#secondary-nav a {padding:0.5em 1em 0.6em; color:#999;text-decoration:none;}
+    		#secondary-nav a:hover {color:#777;}
+    		#secondary-nav .current a{background:#fff;color:#333; }
+
+    		/* -- Pagination -- */
+    		#pagination-top ul {border-bottom:1px solid #ccc;margin:0;}
+    		#pagination-bottom ul {margin-bottom:0;border-top:2px solid #ccc;}
+		
+    /* == Home Page == */
+        #featured-item {width: 500px; margin-top:1em;margin-bottom:2em; float:left;}
+        #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;padding-top:10px;}
+        #featured-item img {width: 466px; padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
+    
+        .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
+        .item-description p {font-size:1em;}
+
+        #recent-items {margin-top:3em;margin-bottom:2em; overflow:hidden;margin-right:-10px;}
+        #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
+        #recent-items .item {display:block;float:left;width:208px;height:auto;overflow:hidden;margin-right:2px;}
+        #recent-items img {display:block;padding:3px;border:1px solid #444;}
+        #recent-items .item-title {display:block;margin-top:10px;}
+        #recent-items .item-description {padding:0 3px;}
+        #recent-items .item-description a.show {margin-left:5px;}
+        #recent-items .view-items-link, #collections .show .view-items-link {clear:both;float:right;margin:10px;}
+		
+    /* == Items Pages ==*/
+    	#item-files img {padding:5px; border:1px solid #444;}
+	
+	
+    	/* Advanced Search */
+        textarea {width:378px; height:312px;float:right;}
+        legend {display:none;}
+        fieldset {display:block; clear:both;}
+        label {font-size:1.5em;}
+        .label {font-size:1.5em;}
+        .inputs {overflow:hidden;zoom:1;}
+        .field {border-bottom:1px solid #ccc; padding:0.75em 0; overflow:hidden; width:512px;}
+        .field label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .textinput, .field select {float:right; width: 378px;background:#fff;}
+        .field select {width: 382px;}
+        .field input {margin:0;margin-left:16px;}
+        input.submitinput {margin-top:1em;}
+        .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
+        .radioinputs label {display:block; float:left; width: 48%; clear:none;}
+        input#description {width: 378px; height: 312px;}
+        .search-entry select {margin-bottom:.5em;}
+        #submit_search_advanced {margin:.5em 0 1em 455px;}
+	
+    	.no-results {margin:10px;}
+    	#advanced_search_header {font-size:1.4em;}
+    	#primary #basic_search_header {font-size:1.4em;}
+
+    /* == Exhibits Pages */
+    	.exhibit {margin:10px 0 10px 0;}
+    	#exhibits p {margin:3px 0 3px;}
+	
+    	#exhibit-show {clear:both;}
+
+    	.exhibit-section-nav {list-style:none; margin:2em 0 0; color:#fff;}
+    	.exhibit-section-nav {border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
+    	.exhibit-section-nav li {display:inline;zoom:1;}
+    	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;zoom:1;}
+    	.exhibit-section-nav a:hover {color:#777;}
+    	.exhibit-section-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+    	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+
+    	.exhibit-page-nav {clear:both;float:right;margin-top:0.4em;}
+    	ul.exhibit-page-nav {text-align:right; padding:0 0.5em;}
+    	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
+    	.exhibit-page-nav a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;}
+    	.exhibit-page-nav li.current a {background:#fff;color:#333;}
+    	.exhibit-text {clear:both;}
+    	.exhibit-item .exhibit-title{clear: both;}
+    	.exhibit-item {float: left;}
+    	#exhibit-summary {margin-top:2em;}
+	
+	
+    /* == Collections Pages == */
+
+    	#collections .field {border:none;}
+    	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
+	
+    	#collections .show h3 {line-height:1.333em;}
+		
+    /* == Footer == */
+    #footer-container {height:200px; border-top:2px solid #ccc;}
+    #footer {clear:both; overflow:hidden; margin-left:0px;width: 860px;padding-bottom:20px;}
+    	#footer p {clear:both;text-align:right;padding:10px 0 0;}
+    	#footer ul {float:left; width:860px;text-align:right;margin-top:10px;}
+    		#footer ul li {margin-left:12px;}
+}
+@media print {
+    body{
+    	font:12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
+    }
+    #content{
+    	width:100%;
+    	margin:0;
+    	float:none;
+    }
+    h1,
+    #site-title{
+    	font-size:16pt;
+    	font-weight:bold;
+    }
+    h2{
+    	font-size:14pt;
+    	font-style:italic;
+    }
+    h3 {
+    	font-size:14pt;
+    }
+    h4 {
+    	font-weight:bold;
+    }
+    h5 {
+    	font-weight:bold;
+    	font-style:italic;
+    	text-transform:uppercase;
+    }
+    a:link:after {
+    	content: " (" attr(href) ") ";
+    	font-size:80%;
+    }
+    #search-container,
+    #primary-nav,
+    #header-image,
+    .navigation,
+    .pagination,
+    #exhibit-page-navigation,
+    .exhibit-section-nav,
+    .exhibit-page-nav {
+    	display:none;
+    }
+    blockquote {
+    	margin:10pt 0 0 0;
+    	font-style:italic;
+    }
+}
