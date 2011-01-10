@@ -19,14 +19,7 @@ queue_css('style');
 display_css(); 
 ?>
 
-<?php if($headerBackground = get_theme_option('Header Background')): ?>
 
-<style type="text/css" media="screen">
-    #header {
-        background:transparent url('<?php echo WEB_THEME_UPLOADS.DIRECTORY_SEPARATOR.$headerBackground; ?>') top left no-repeat;
-    }
-</style>
-<?php endif; ?>
 
 <!-- JavaScripts -->
 <?php echo display_js(); ?>
@@ -52,10 +45,10 @@ display_css();
 	
     			<?php echo custom_public_nav_header(); ?>
     			</ul>
-			
+		
 			</div><!-- end primary-nav -->
 			</div><!-- end div-container -->
-			
+			<?php echo custom_header_image(); ?>	
 			
 		<div id="content">
 			

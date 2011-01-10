@@ -139,7 +139,7 @@
     			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
 
     /* == Header == */
-    #header {height:12em;width:860px;}
+    #header {height:12em;width:860px; }
     #search-container {float:right;padding-top:10px;margin:0;}
     #search-container #search {margin-right:5px;}
     #search-container #submit_search {background:#888;}
@@ -147,24 +147,25 @@
     #search-container a {float:right;font-size:1.5em;margin-top:5px;text-decoration:none;color:#888;padding:1px 5px;}
     #search-container a:hover {color:#777;}
 
-    #site-title {font-size:3.5em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff}
+    #site-title {font-size:3.5em; padding:20px 0 0 20px; line-height:1.333333em;color:#fff;}
+    #site-title img {}
     #site-title a {text-decoration:none;}
 
     /* == Content == */
 
     	/* -- Structure -- */
     	#content {padding:25px 0 0 20px; overflow:hidden;clear:both;background-color:#222;}
-    		#primary {float:left; width: 840px; }
+    		#primary {float:left; width: 850px; }
 		
     		/* -- Navigation -- */
     		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-    		#primary-nav {width:860px;}
+    		#primary-nav {width:860px; }
     		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
     		#primary-nav li { display:block; float:left; }
     		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
     		#primary-nav a:hover {background-color:#ccc;}
     		#primary-nav li.current a {background-color:#fff;}
-    		#primary-nav li.nav-about a {padding-right:0;}
+    		#primary-nav li.nav-about a {padding-right:.5em;}
 
     		#secondary-nav {margin-bottom:0;padding:0.4em 0;border-bottom:2px solid #ccc;}
     		#secondary-nav a {padding:0.5em 1em 0.6em; color:#999;text-decoration:none;}
@@ -176,22 +177,23 @@
     		#pagination-bottom ul {margin-bottom:0;border-top:2px solid #ccc;}
 		
     /* == Home Page == */
-        #featured-item {width: 500px; margin-top:1em;margin-bottom:2em; float:left;}
+        #homepage-text {width: 835px; font-size: 1.122em;}
+        #featured-item {width: 525px; margin-top:1em;margin-bottom:2em; float:left; }
         #featured-item h3 {clear:both;font-size:1.8em; margin-bottom:1em; line-height:1em;padding-top:10px;}
-        #featured-item img {width: 466px; padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
+        #featured-item img {width: 500px; padding:8px;border:2px solid #444;float:left;margin-bottom:2px;}
     
         .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
         .item-description p {font-size:1em;}
 
-        #recent-items {margin-top:3em;margin-bottom:2em; overflow:hidden;margin-right:-10px;}
+        #recent-items {margin: 1em 1em; overflow:hidden; width: 258px; float: right; }
         #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
-        #recent-items .item {display:block;float:left;width:208px;height:auto;overflow:hidden;margin-right:2px;}
-        #recent-items img {display:block;padding:3px;border:1px solid #444;}
+        #recent-items .item {display:block;float:left;width:258px;height:auto;overflow:hidden;margin-right:2px;}
+        #recent-items img {display:block;padding:5px;border:1px solid #444; margin-bottom: 10px; width: 233px;}
         #recent-items .item-title {display:block;margin-top:10px;}
         #recent-items .item-description {padding:0 3px;}
         #recent-items .item-description a.show {margin-left:5px;}
-        #recent-items .view-items-link, #collections .show .view-items-link {clear:both;float:right;margin:10px;}
-		
+        #recent-items .view-items-link, #collections .show .view-items-link {float:left;margin:3px 5px;}
+		.featured-box{clear: left; border-top:2px solid #444;  width: 520px; padding: 10px 0px; margin: 0px;}
     /* == Items Pages ==*/
     	#item-files img {padding:5px; border:1px solid #444;}
 	
@@ -223,25 +225,27 @@
     /* == Exhibits Pages */
     	.exhibit {margin:10px 0 10px 0;}
     	#exhibits p {margin:3px 0 3px;}
-	
+	    #exhibit-sections {margin-bottom: 40px;}
     	#exhibit-show {clear:both;}
-
-    	.exhibit-section-nav {list-style:none; margin:2em 0 0; color:#fff;}
-    	.exhibit-section-nav {border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; }
+        #exhibit.show h2 {clear:both;}
+    
+    	.exhibit-section-nav ul{list-style:none; margin:2em 0 0; color:#fff; clear:both;}
+    	.exhibit-section-nav ul{border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; width: 850px;}
     	.exhibit-section-nav li {display:inline;zoom:1;}
-    	.exhibit-section-nav a {padding:0.5em 1em 0.5em; color:#999;text-decoration:none;zoom:1;}
-    	.exhibit-section-nav a:hover {color:#777;}
+    	.exhibit-section-nav a {padding:0.11em 1em 0.44em; color:#fff;text-decoration:none;zoom:1;}
+    	.exhibit-section-nav a:hover {color:#ccc;}
     	.exhibit-section-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
     	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
 
-    	.exhibit-page-nav {clear:both;float:right;margin-top:0.4em;}
-    	ul.exhibit-page-nav {text-align:right; padding:0 0.5em;}
+    	#exhibit-page-navigation {clear:both;float:right;margin-top:0.4em; margin-bottom: 20px; }
+    	ul.exhibit-page-nav {float:left; text-align:right; margin:0 0.5em; width: 840px;}
     	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
-    	.exhibit-page-nav a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;}
-    	.exhibit-page-nav li.current a {background:#fff;color:#333;}
+    	#exhibit-page-navigation a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;font-size:1.119em;}
+    	#exhibit-page-navigation a:hover {background:#fff;color:#333;}
     	.exhibit-text {clear:both;}
-    	.exhibit-item .exhibit-title{clear: both;}
-    	.exhibit-item {float: left;}
+    	.exhibit-item .exhibit-title{clear:both;}
+    	.exhibit-item {}
+        .image-text-group {clear:both;}
     	#exhibit-summary {margin-top:2em;}
 	
 	
@@ -256,6 +260,7 @@
     #footer-container {height:200px; border-top:2px solid #ccc;}
     #footer {clear:both; overflow:hidden; margin-left:0px;width: 860px;padding-bottom:20px;}
     	#footer p {clear:both;text-align:right;padding:10px 0 0;}
+        #footer-text {margin-top:40px; margin-left: 20px; font-size: .899em; }
     	#footer ul {float:left; width:860px;text-align:right;margin-top:10px;}
     		#footer ul li {margin-left:12px;}
 }
