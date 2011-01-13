@@ -154,12 +154,12 @@
     /* == Content == */
 
     	/* -- Structure -- */
-    	#content {padding:25px 0 0 20px; overflow:hidden;clear:both;background-color:#222;}
-    		#primary {float:left; width: 850px; }
+    	#content {padding:25px 20px 0 20px; overflow:hidden;clear:both;background-color:#222; }
+    		#primary {float:left; width: 824px; }
 		
     		/* -- Navigation -- */
     		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-    		#primary-nav {width:860px; }
+    		#primary-nav {width:864px; }
     		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
     		#primary-nav li { display:block; float:left; }
     		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
@@ -185,7 +185,7 @@
         .item-description {font-size:1.5em; line-height:1.33333em; margin-bottom:1.33333em;color:#ddd;}
         .item-description p {font-size:1em;}
 
-        #recent-items {margin: 1em 1em; overflow:hidden; width: 258px; float: right; }
+        #recent-items {margin: 1em 1em; overflow:hidden; width: 248px; float: right; }
         #recent-items h3 {font-style:italic;margin-bottom:5px;padding:0 3px;}
         #recent-items .item {display:block;float:left;width:258px;height:auto;overflow:hidden;margin-right:2px;}
         #recent-items img {display:block;padding:5px;border:1px solid #444; margin-bottom: 10px; width: 233px;}
@@ -244,7 +244,7 @@
     	#exhibit-page-navigation a:hover {background:#fff;color:#333;}
     	.exhibit-text {clear:both;}
     	.exhibit-item .exhibit-title{clear:both;}
-    	.exhibit-item {}
+    	.exhibit-text ul, ol {list-style: disc; margin: 1em 4em; padding:0; }
         .image-text-group {clear:both;}
     	#exhibit-summary {margin-top:2em;}
 	
@@ -255,7 +255,12 @@
     	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
 	
     	#collections .show h3 {line-height:1.333em;}
-		
+
+	    /* == Simple Pages == */
+	ul.simple-pages-navigation li{font-size: 133%; margin: 0px 0px 10px 0px;}
+	ul.simple-pages-navigation ul {font-size: 66%; margin: 10px 0px 0px 0px; line-height: .33em;}
+	ul.simple-pages-navigation ul a {text-decoration: none;}
+	.page #primary {width: 700px; margin-right: 18px; }	
     /* == Footer == */
     #footer-container {height:200px; border-top:2px solid #ccc;}
     #footer {clear:both; overflow:hidden; margin-left:0px;width: 860px;padding-bottom:20px;}
