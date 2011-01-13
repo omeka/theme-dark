@@ -167,7 +167,7 @@
     		#primary-nav li.current a {background-color:#fff;}
     		#primary-nav li.nav-about a {padding-right:.5em;}
 
-    		#secondary-nav {margin-bottom:0;padding:0.4em 0;border-bottom:2px solid #ccc;}
+    		#secondary-nav {margin-bottom:1em;padding:0.5em 0;border-bottom:2px solid #ccc;}
     		#secondary-nav a {padding:0.5em 1em 0.6em; color:#999;text-decoration:none;}
     		#secondary-nav a:hover {color:#777;}
     		#secondary-nav .current a{background:#fff;color:#333; }
@@ -261,6 +261,10 @@
 	ul.simple-pages-navigation ul {font-size: 66%; margin: 10px 0px 0px 0px; line-height: .33em;}
 	ul.simple-pages-navigation ul a {text-decoration: none;}
 	.page #primary {width: 700px; margin-right: 18px; }	
+	
+	/* == Geolocation == */
+	#map-block {margin: 4px 0px 16px 0px;}
+	
     /* == Footer == */
     #footer-container {height:200px; border-top:2px solid #ccc;}
     #footer {clear:both; overflow:hidden; margin-left:0px;width: 860px;padding-bottom:20px;}
