@@ -224,17 +224,18 @@
 
     /* == Exhibits Pages */
     	.exhibit {margin:10px 0 10px 0;}
+        #exhibit #primary #nav-container {width: 850px; padding-top: 5px;}
     	#exhibits p {margin:3px 0 3px;}
-	    #exhibit-sections {margin-bottom: 40px;}
+	    #exhibit-sections {margin-bottom: 40px; line-height: 1.33em;}
+	    #exhibit-sections h3 {line-height: 1.44em;}
     	#exhibit-show {clear:both;}
         #exhibit.show h2 {clear:both;}
     
     	.exhibit-section-nav ul{list-style:none; margin:2em 0 0; color:#fff; clear:both;}
-    	.exhibit-section-nav ul{border-bottom:1px solid #ccc;padding:0.4em 0.5em; font-size:1.5em; width: 850px;}
     	.exhibit-section-nav li {display:inline;zoom:1;}
     	.exhibit-section-nav a {padding:0.11em 1em 0.44em; color:#fff;text-decoration:none;zoom:1;}
     	.exhibit-section-nav a:hover {color:#ccc;}
-    	.exhibit-section-nav .current a{border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
+    	.exhibit-section-nav .current a{padding: .44em .44em .40em .44em; border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
     	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
 
     	#exhibit-page-navigation {clear:both;float:right;margin-top:0.4em; margin-bottom: 20px; }
@@ -262,8 +263,6 @@
 	ul.simple-pages-navigation ul a {text-decoration: none;}
 	.page #primary {width: 700px; margin-right: 18px; }	
 	
-	/* == Geolocation == */
-	#map-block {margin: 4px 0px 16px 0px;}
 	
     /* == Footer == */
     #footer-container {height:200px; border-top:2px solid #ccc;}
