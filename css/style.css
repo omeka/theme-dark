@@ -128,16 +128,6 @@
     			.vvvvvvv-popular {font-size:340%;}
     			.vvvvvvvv-popular {font-size:360%;}
 
-    			.popular a, .popular a:visited {color: #bbb;}
-    			.v-popular a, .v-popular a:visited {color: #bbb;}
-    			.vv-popular a, .vv-popular a:visited {color: #bbb;}
-    			.vvv-popular a, .vvv-popular a:visited {color: #bbb;}
-    			.vvvv-popular a, .vvvv-popular a:visited {color: #bbb;}
-    			.vvvvv-popular a, .vvvvv-popular a:visited {color: #bbb;}
-    			.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #bbb;}
-    			.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #bbb;}
-    			.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #bbb;}
-
     /* == Header == */
     #header {height:12em;width:860px; }
     #search-container {float:right;padding-top:10px;margin:0;}
@@ -158,9 +148,8 @@
     		#primary {float:left; width: 824px; }
 		
     		/* -- Navigation -- */
-    		#nav-container {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-    		#primary-nav {width:864px; }
-    		#primary-nav ul {margin:0;font-size:2em; line-height:1em;float:right;}
+    		#primary-nav {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
+    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1em;float:right;}
     		#primary-nav li { display:block; float:left; }
     		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
     		#primary-nav a:hover {background-color:#ccc;}
