@@ -61,7 +61,7 @@
     <?php if ((get_theme_option('Display Featured Exhibit') !== '0')
            && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
     <!-- Featured Exhibit -->
-    <div id="featured-exhibit" class="featured-box">
+    <div class="featured-box">
         <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
     </div><!-- end featured exhibit -->
     <?php endif; ?>
