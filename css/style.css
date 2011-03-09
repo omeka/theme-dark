@@ -149,9 +149,9 @@
 		
     		/* -- Navigation -- */
     		#primary-nav {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1em;float:right;}
-    		#primary-nav li { display:block; float:left; }
-    		#primary-nav a {text-decoration:none;color:#333; display:block; float:left;padding:1px .55em .2em .5em;}
+    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1em;text-align:right;}
+    		#primary-nav li {display:inline;}
+    		#primary-nav a {text-decoration:none;color:#333;padding:1px .55em .2em .5em;}
     		#primary-nav a:hover {background-color:#ccc;}
     		#primary-nav li.current a {background-color:#fff;}
     		#primary-nav li.nav-about a {padding-right:.5em;}
