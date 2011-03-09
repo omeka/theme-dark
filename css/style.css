@@ -94,7 +94,6 @@
     		.pagination .previous {border-right:1px solid #ccc; padding-right:1em;}
 		
     		/* Items Classes */
-    		.element {border-bottom:1px solid #ccc; margin-top:7px; }
     		.element-text {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
     		.element-text-empty {font-size:1.5em; line-height:1.33333em;color:#ddd;margin:7px 0 7px 0;}
     		.element-text a {color:#ddd;margin:7px 0 7px 0;}
@@ -105,9 +104,9 @@
 		
     		.item-meta {overflow:hidden;}
 		
-    		.browse .item, #collections .show .item{overflow:hidden;padding-top:2em;border-top:.1em solid #ccc;}
-    		.browse .item-img img, #collections .show .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
-    		.browse .item p, #collections .show .item p {margin-top:6px;margin-bottom:6px;}
+    		.browse .item, #collections .item{overflow:hidden;padding-top:2em;border-bottom:2px solid #444;}
+    		.browse .item-img img, #collections .item-img img {width:100px; height:100px; float:left; display:block; margin-bottom:10px; margin-right:20px; margin-top:4px; padding:6px; border:1px solid #ccc;}
+    		.browse .item p, #collections .item p {margin-top:6px;margin-bottom:6px;}
 		
     		/* Tags Classes */
     		.tags li {display:inline;}
@@ -148,10 +147,10 @@
     		#primary {float:left; width: 824px; }
 		
     		/* -- Navigation -- */
-    		#primary-nav {background-color:#888; height:2.5em;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
-    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1em;text-align:right;}
+    		#primary-nav {background-color:#888;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
+    		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1.4em;text-align:right;}
     		#primary-nav li {display:inline;}
-    		#primary-nav a {text-decoration:none;color:#333;padding:1px .55em .2em .5em;}
+    		#primary-nav a {text-decoration:none;color:#333;padding:.2em .5em;}
     		#primary-nav a:hover {background-color:#ccc;}
     		#primary-nav li.current a {background-color:#fff;}
     		#primary-nav li.nav-about a {padding-right:.5em;}
@@ -191,10 +190,10 @@
         textarea {width:378px; height:312px;float:right;}
         legend {display:none;}
         fieldset {display:block; clear:both;}
-        label {font-size:1.5em;}
-        .label {font-size:1.5em;}
+        label {font-size:1.5em;color:#ddd;}
+        .label {font-size:1.5em;color:#ddd;}
         .inputs {overflow:hidden;zoom:1;}
-        .field {border-bottom:1px solid #ccc; padding:0.75em 0; overflow:hidden; width:512px;}
+        .field {border-bottom:2px solid #444; padding:0.75em 0; overflow:hidden; width:512px;}
         .field label {float:left; width: 114px;font-weight:normal;clear:left; }
         .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
         .field .textinput, .field select {float:right; width: 378px;background:#fff;}
@@ -242,7 +241,7 @@
     /* == Collections Pages == */
 
     	#collections .field {border:none;}
-    	.collection {border-bottom:1px solid #ccc; margin-top:7px; }
+    	.collection {border-bottom:2px solid #444; margin-top:7px; }
 	
     	#collections .show h3 {line-height:1.333em;}
 
