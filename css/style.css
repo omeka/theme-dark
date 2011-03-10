@@ -129,7 +129,7 @@
 
     /* == Header == */
     #header {height:12em;width:860px; }
-    #search-container {float:right;padding-top:10px;margin:0;}
+    #search-container {float:right;padding-top:20px;margin:0;}
     #search-container #search {margin-right:5px;}
     #search-container #submit_search {background:#888;}
     #search-container #submit_search:hover {background:#777;}
