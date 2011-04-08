@@ -226,8 +226,8 @@
     	.exhibit-section-nav .current a{padding: .44em .44em .40em .44em; border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
     	.exhibit-section-nav a.current {border-top:1px solid #ccc;background:#fff;color:#333; font-weight:bold;border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:1px solid #fff;}
 
-    	#exhibit-page-navigation {clear:both;float:right;margin-top:0.4em; margin-bottom: 20px; }
-    	ul.exhibit-page-nav {float:left; text-align:right; margin:0 0.5em; width: 840px;}
+    	#exhibit-page-navigation {clear:both;margin-top:0.4em; margin-bottom: 20px; }
+    	ul.exhibit-page-nav {float:left;margin:0 0.5em; width: 840px;}
     	.exhibit-page-nav li {display:inline; margin-left:1em;zoom:1;}
     	#exhibit-page-navigation a {padding:0.5em 1em 0.5em 1em; color:#999;text-decoration:none;zoom:1;font-size:1.119em;}
     	#exhibit-page-navigation a:hover {background:#fff;color:#333;}
