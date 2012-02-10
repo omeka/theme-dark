@@ -149,7 +149,7 @@
     		/* -- Navigation -- */
     		#primary-nav {background-color:#888;border-bottom:2px solid #fff;border-top:2px solid #fff;clear:both;}
     		#primary-nav ul {width:864px;margin:0;font-size:2em; line-height:1.4em;text-align:right;}
-    		#primary-nav li {display:inline;}
+    		#primary-nav li {display:inline; white-space: nowrap;}
     		#primary-nav a {text-decoration:none;color:#333;padding:.2em .5em;}
     		#primary-nav a:hover {background-color:#ccc;}
     		#primary-nav li.current a {background-color:#fff;}
