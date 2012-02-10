@@ -8,7 +8,7 @@
     <?php endif; ?>
 	
     <div id="recent-items">
-        <h2>Recently Added </h2>
+        <h2><?php echo __('Recently Added Items'); ?></h2>
     <?php 
         $homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '2';
         set_items_for_loop(recent_items($homepageRecentItems));
@@ -24,21 +24,21 @@
             <?php endif; ?>
                 <h3><?php echo link_to_item(); ?></h3>
             <?php if($desc = item('Dublin Core', 'Description', array('snippet'=>125))): ?>
-                <div class="item-description"><?php echo $desc; ?><?php echo link_to_item('see more',(array('class'=>'show'))) ?></div>
+                <div class="item-description"><?php echo $desc; ?></div>
             <?php endif; ?>
             </div>
         <?php endwhile; ?>
         </div>
     <?php else: ?>
-        <p>No recent items available.</p>
+        <p><?php echo __('No recent items available.'); ?></p>
     <?php endif; ?>
-        <p class="view-items-link"><a href="<?php echo html_escape(uri('items')); ?>">View All Items</a></p>
+        <p class="view-items-link"><a href="<?php echo html_escape(uri('items')); ?>"><?php echo __('View All Items'); ?></a></p>
 	</div><!-- end recent-items -->
 
     <?php if (get_theme_option('Display Featured Item') !== '0'): ?>
 	<!-- Featured Item -->
     <div id="featured-item">
-        <h2>Featured Item</h2>
+        <h2><?php echo __('Featured Item'); ?></h2>
         <?php if ($randomitem = random_featured_item(true)):  ?>
             <?php set_current_item($randomitem); ?>
             <?php if (item_has_thumbnail()): ?>
@@ -46,7 +46,7 @@
             <?php endif; ?>
             <h3><?php echo link_to_item(); ?> </h3>	
         <?php else: ?>
-            <p>No featured items are available.</p>	
+        <p><?php echo __('No featured items are available.'); ?></p>	
         <?php endif; ?>	
 	</div><!-- end featured-item -->
     <?php endif; ?>
